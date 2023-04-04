@@ -25,8 +25,5 @@ public class Main {
 
         books.stream().filter(book -> book.getNumberOfPage() > 100).forEach(book -> newBooks.add(book));
         newBooks.stream().forEach(book -> System.out.println(book));
-
-
-
     }
 }
