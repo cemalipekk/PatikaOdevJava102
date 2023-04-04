@@ -7,8 +7,7 @@ public class Main {
         ArrayList<Book> books = new ArrayList<>();
         ArrayList<Book> newBooks = new ArrayList<>();
         HashMap<String, String> map = new HashMap<>();
-
-
+        
         books.add(Book.Kitap1);
         books.add(Book.Kitap2);
         books.add(Book.Kitap3);
@@ -22,7 +21,6 @@ public class Main {
 
 
         books.stream().forEach(book -> map.put(book.getBookName(), book.getAuthorName()));
-
 
 
         books.stream().filter(book -> book.getNumberOfPage() > 100).forEach(book -> newBooks.add(book));
